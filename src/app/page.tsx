@@ -6,14 +6,21 @@ import { format, parseISO } from 'date-fns';
 import { id as indonesiaLocale } from 'date-fns/locale';
 import Image from 'next/image';
 import Link from 'next/link';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
 export default async function HomePage() {
   const sortedArticles = [...newsArticles].sort(
     (a, b) => new Date(b.publicationDate).getTime() - new Date(a.publicationDate).getTime()
   );
 
-  const heroArticle = sortedArticles[0];
-  const otherArticles = sortedArticles.slice(1);
+  const heroArticles = sortedArticles.slice(0, 3);
+  const otherArticles = sortedArticles.slice(3);
   
   const popularArticles = newsArticles.filter(a => ['pendaftaran-mahasiswa-baru-dibuka', 'beasiswa-lpdp-tahap-2', 'program-magang-bersertifikat-kampus-merdeka'].includes(a.slug));
   const latestArticles = sortedArticles.slice(0, 4);
@@ -22,31 +29,42 @@ export default async function HomePage() {
   return (
     <div className="container mx-auto px-4 py-8">
       {/* Hero Section */}
-      <div className="mb-8 grid grid-cols-1 gap-4">
-        <Link href={`/article/${heroArticle.slug}`} className="group block">
-          <div className="relative h-[400px] w-full rounded-xl overflow-hidden shadow-lg">
-            <Image
-              src={heroArticle.imageUrl}
-              alt={heroArticle.title}
-              fill
-              priority
-              className="object-cover transition-transform duration-300 group-hover:scale-105"
-              data-ai-hint={heroArticle.imageHint}
-              sizes="100vw"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
-            <div className="absolute bottom-0 left-0 p-6 text-white">
-              <Badge variant="secondary" className="mb-2">{heroArticle.category}</Badge>
-              <h1 className="text-3xl md:text-4xl font-bold font-headline mb-2">
-                {heroArticle.title}
-              </h1>
-              <p className="text-sm md:text-base text-gray-200 max-w-3xl">
-                {heroArticle.excerpt}
-              </p>
-            </div>
-          </div>
-        </Link>
+      <div className="mb-8">
+        <Carousel className="w-full" opts={{ loop: true }}>
+          <CarouselContent>
+            {heroArticles.map((article) => (
+              <CarouselItem key={article.id}>
+                <Link href={`/article/${article.slug}`} className="group block">
+                  <div className="relative h-[450px] w-full rounded-xl overflow-hidden shadow-lg">
+                    <Image
+                      src={article.imageUrl}
+                      alt={article.title}
+                      fill
+                      priority
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      data-ai-hint={article.imageHint}
+                      sizes="100vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
+                    <div className="absolute bottom-0 left-0 p-8 text-white">
+                      <Badge variant="secondary" className="mb-2">{article.category}</Badge>
+                      <h1 className="text-3xl md:text-4xl font-bold font-headline mb-2 max-w-4xl">
+                        {article.title}
+                      </h1>
+                      <p className="text-sm md:text-base text-gray-200 max-w-3xl">
+                        {article.excerpt}
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="left-4" />
+          <CarouselNext className="right-4" />
+        </Carousel>
       </div>
+
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         {/* Main content */}
