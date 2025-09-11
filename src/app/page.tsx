@@ -1,3 +1,7 @@
+
+'use client';
+
+import React from 'react';
 import { newsArticles } from '@/lib/data';
 import NewsCard from '@/components/news/news-card';
 import { Badge } from '@/components/ui/badge';
@@ -13,14 +17,15 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import Autoplay from "embla-carousel-autoplay"
 
-export default async function HomePage() {
+export default function HomePage() {
   const sortedArticles = [...newsArticles].sort(
     (a, b) => new Date(b.publicationDate).getTime() - new Date(a.publicationDate).getTime()
   );
 
-  const heroArticles = sortedArticles.slice(0, 3);
-  const otherArticles = sortedArticles.slice(3);
+  const heroArticles = sortedArticles.slice(0, 5); // Ambil 5 untuk carousel
+  const otherArticles = sortedArticles.slice(5);
   
   const popularArticles = newsArticles.filter(a => ['pendaftaran-mahasiswa-baru-dibuka', 'beasiswa-lpdp-tahap-2', 'program-magang-bersertifikat-kampus-merdeka'].includes(a.slug));
   const latestArticles = sortedArticles.slice(0, 4);
@@ -32,7 +37,16 @@ export default async function HomePage() {
       <section className="container mx-auto px-4 py-8" aria-labelledby="hero-heading">
         <h1 id="hero-heading" className="sr-only">Berita Utama EduKita</h1>
         <div className="mb-8">
-          <Carousel className="w-full" opts={{ loop: true }}>
+          <Carousel 
+            className="w-full" 
+            opts={{ loop: true }}
+            plugins={[
+              Autoplay({
+                delay: 5000, // 5 detik per slide
+                stopOnInteraction: false,
+              }),
+            ]}
+          >
             <CarouselContent>
               {heroArticles.map((article) => (
                 <CarouselItem key={article.id}>
