@@ -324,48 +324,175 @@ export const newsArticles: NewsArticle[] = [
   {
     id: '11',
     slug: 'membedakan-this-that-these-those',
-    title: 'Dasar-Dasar Bahasa Inggris: Memahami Perbedaan This, That, These, dan Those',
-    excerpt: 'Demonstrative pronouns seperti "this," "that," "these," dan "those" adalah fondasi dalam percakapan bahasa Inggris. Mari kita pahami cara menggunakannya dengan benar.',
+    title: 'Panduan Master 2025: This, That, These, Those dalam Bahasa Inggris',
+    excerpt: 'Dari percakapan sehari-hari hingga tulisan akademis, this, that, these, dan those adalah fondasi. Kuasai penggunaannya dari dasar hingga tingkat mahir dengan panduan terlengkap ini.',
     content: `
-      <h2>Pengantar Demonstratives</h2>
-      <p>Dalam tata bahasa Inggris, <em>demonstratives</em> (kata tunjuk) digunakan untuk menunjuk orang atau benda tertentu. Empat kata tunjuk yang paling umum adalah <strong>this, that, these,</strong> dan <strong>those</strong>. Penggunaannya bergantung pada dua faktor utama: <strong>jarak</strong> (dekat atau jauh dari pembicara) dan <strong>jumlah</strong> (tunggal atau jamak).</p>
+      <h2>Pendahuluan: Empat Kata Ajaib Penunjuk Arah</h2>
+      <p>Dalam jagat raya tata bahasa Inggris, ada empat kata yang tampaknya sederhana namun memegang peranan krusial dalam memberikan kejelasan dan arah: <strong>this, that, these, dan those</strong>. Dikenal sebagai <em>demonstrative pronouns</em> atau <em>demonstrative determiners</em>, kuartet ini adalah GPS linguistik kita. Mereka menjawab pertanyaan "Yang mana?" dengan menunjuk secara spesifik pada orang, benda, atau bahkan ide. Tanpa mereka, percakapan kita akan terasa mengambang dan penuh kebingungan, seperti, "Tolong berikan saya buku," padahal ada selusin buku di atas meja.</p>
+      <p>Menguasai keempat kata ini lebih dari sekadar menghafal "ini" atau "itu". Ini tentang memahami konsep fundamental <strong>jarak (proximity)</strong> dan <strong>jumlah (number)</strong>, baik secara literal maupun kiasan. Panduan komprehensif ini akan membawa Anda menyelam dari perairan dangkal hingga ke palung terdalam penggunaan <em>this, that, these,</em> dan <em>those</em>, mengubah Anda dari pengguna biasa menjadi seorang maestro bahasa yang percaya diri. Mari kita mulai perjalanan ini.</p>
+      
+      <img src="https://picsum.photos/seed/thist1/600/350" alt="Sebuah kompas menunjuk ke arah" class="w-full rounded-lg my-4 shadow-md" data-ai-hint="compass pointing direction" />
 
-      <h2>Aturan Main: Jarak dan Jumlah</h2>
-      <p>Memahami matriks sederhana ini adalah kunci untuk menguasai kata tunjuk:</p>
+      <hr class="my-10 border-t-2 border-dashed"/>
+
+      <h2>BAGIAN 1: Aturan Emas — Matriks Jarak dan Jumlah</h2>
+      <p>Untuk memahami inti dari <em>demonstratives</em>, bayangkan sebuah matriks 2x2 yang sederhana. Satu sumbu mewakili JARAK (dekat vs. jauh) dan sumbu lainnya mewakili JUMLAH (tunggal vs. jamak). Setiap kata—this, that, these, those—menempati satu kuadran yang unik.</p>
+
+      <h3>1. Dekat (Near) + Tunggal (Singular) = THIS</h3>
+      <p>Gunakan 'this' untuk menunjuk pada <strong>satu</strong> orang, benda, atau ide yang berada <strong>dekat</strong> dengan Anda. "Dekat" bisa berarti secara fisik berada dalam jangkauan tangan Anda, atau secara metaforis, sedang terjadi sekarang atau menjadi topik utama pembicaraan.</p>
       <ul>
-        <li><strong>This (Ini):</strong> Digunakan untuk menunjuk satu benda atau orang yang <strong>dekat</strong> dengan pembicara.
-          <br><em>Contoh: "<strong>This</strong> book on my desk is interesting."</em></li>
-        <li><strong>That (Itu):</strong> Digunakan untuk menunjuk satu benda atau orang yang <strong>jauh</strong> dari pembicara.
-          <br><em>Contoh: "<strong>That</strong> car across the street is new."</em></li>
-        <li><strong>These (Ini):</strong> Digunakan untuk menunjuk lebih dari satu benda atau orang yang <strong>dekat</strong> dengan pembicara.
-          <br><em>Contoh: "<strong>These</strong> shoes I'm wearing are comfortable."</em></li>
-        <li><strong>Those (Itu):</strong> Digunakan untuk menunjuk lebih dari satu benda atau orang yang <strong>jauh</strong> dari pembicara.
-          <br><em>Contoh: "<strong>Those</strong> mountains in the distance are beautiful."</em></li>
+        <li><strong>Fisik:</strong> <em>"Do you like <strong>this</strong> T-shirt I'm wearing?"</em> (Baju kaos yang sedang saya pakai)</li>
+        <li><strong>Waktu:</strong> <em>"<strong>This</strong> morning was very productive."</em> (Pagi ini, saat ini)</li>
+        <li><strong>Abstrak:</strong> <em>"Listen to <strong>this</strong> idea."</em> (Ide yang akan saya sampaikan sekarang)</li>
+        <li><strong>Percakapan telepon:</strong> <em>"Hello, <strong>this</strong> is Budi."</em> (Memperkenalkan diri sendiri)</li>
+      </ul>
+      
+      <h3>2. Jauh (Far) + Tunggal (Singular) = THAT</h3>
+      <p>Gunakan 'that' untuk menunjuk pada <strong>satu</strong> orang, benda, atau ide yang berada <strong>jauh</strong> dari Anda. "Jauh" bisa berarti secara fisik berada di seberang ruangan, atau secara metaforis, telah terjadi di masa lalu atau bukan fokus utama saat ini.</p>
+      <ul>
+        <li><strong>Fisik:</strong> <em>"Can you see <strong>that</strong> bird on the roof?"</em> (Burung di atap, jauh dari jangkauan)</li>
+        <li><strong>Waktu:</strong> <em>"I remember my graduation day. <strong>That</strong> was a happy moment."</em> (Momen di masa lalu)</li>
+        <li><strong>Abstrak:</strong> <em>"I don't agree with <strong>that</strong> opinion."</em> (Opini yang telah diungkapkan orang lain)</li>
+        <li><strong>Merespons:</strong> A: <em>"It's raining."</em> B: <em>"Oh, <strong>that</strong>'s not good."</em> (Merespons informasi yang baru diterima)</li>
       </ul>
 
-      <h2>Penggunaan dalam Kalimat</h2>
-      <p>Kata tunjuk ini bisa berfungsi sebagai <em>determiner</em> (berdiri di depan kata benda) atau sebagai <em>pronoun</em> (menggantikan kata benda).</p>
+      <h3>3. Dekat (Near) + Jamak (Plural) = THESE</h3>
+      <p>Gunakan 'these' untuk menunjuk pada <strong>lebih dari satu</strong> orang, benda, atau ide yang berada <strong>dekat</strong> dengan Anda. Ini adalah bentuk jamak dari 'this'.</p>
+      <ul>
+        <li><strong>Fisik:</strong> <em>"I bought <strong>these</strong> books today."</em> (Buku-buku yang ada di tangan saya)</li>
+        <li><strong>Waktu (periode saat ini):</strong> <em>"He's been very busy <strong>these</strong> past few weeks."</em> (Beberapa minggu terakhir ini)</li>
+        <li><strong>Abstrak:</strong> <em>"<strong>These</strong> are the reasons for my decision."</em> (Alasan-alasan yang akan saya jelaskan)</li>
+        <li><strong>Memperkenalkan orang:</strong> <em>"Mom, Dad, <strong>these</strong> are my friends, Adi and Wati."</em></li>
+      </ul>
       
-      <h3>Sebagai Determiner</h3>
-      <p>Ketika digunakan sebagai determiner, kata tunjuk diikuti langsung oleh kata benda.</p>
-      <p><em>"I want to buy <strong>this</strong> shirt." (bukan 'this shirts')</em></p>
-      <p><em>"Can you pass me <strong>those</strong> plates?" (bukan 'those plate')</em></p>
-      <p>Penting untuk memastikan kesesuaian jumlah antara kata tunjuk dan kata benda yang mengikutinya (this/that dengan benda tunggal, these/those dengan benda jamak).</p>
-      
-      <h3>Sebagai Pronoun</h3>
-      <p>Ketika digunakan sebagai pronoun, kata tunjuk berdiri sendiri, menggantikan kata benda yang sudah dipahami dari konteks.</p>
-      <p><em>"What is <strong>this</strong>?" (sambil menunjuk ke sebuah objek di dekatnya)</em></p>
-      <p><em>"<strong>That</strong> is my house." (sambil menunjuk ke sebuah rumah di seberang jalan)</em></p>
-      <p><em>"<strong>These</strong> are my friends, John and Jane."</em></p>
-      
-      <p>Untuk penjelasan yang lebih rinci dan contoh-contoh tambahan, Anda bisa membaca panduan lengkap mengenai <a href="https://www.ultimateducation.co.id/perbedaan-this-that-these-those-dalam-bahasa-inggris/" target="_blank" rel="noopener noreferrer">perbedaan this, that, these, dan those</a>.</p>
+      <h3>4. Jauh (Far) + Jamak (Plural) = THOSE</h3>
+      <p>Gunakan 'those' untuk menunjuk pada <strong>lebih dari satu</strong> orang, benda, atau ide yang berada <strong>jauh</strong> dari Anda. Ini adalah bentuk jamak dari 'that'.</p>
+      <ul>
+        <li><strong>Fisik:</strong> <em>"Who are <strong>those</strong> people waiting outside?"</em> (Orang-orang di luar, jauh dari sini)</li>
+        <li><strong>Membandingkan:</strong> <em>"I prefer <strong>these</strong> shoes to <strong>those</strong> ones in the window."</em> (Membandingkan sepatu di sini dengan sepatu di etalase)</li>
+        <li><strong>Masa Lalu:</strong> <em>"I miss my university days. <strong>Those</strong> were the days!"</em> (Masa-masa di universitas yang sudah berlalu)</li>
+        <li><strong>Generalisasi:</strong> <em>"<strong>Those</strong> who hesitate are lost."</em> (Frasa umum, merujuk pada sekelompok orang secara general)</li>
+      </ul>
 
-      <h2>Kesalahan Umum yang Harus Dihindari</h2>
-      <p>Kesalahan paling umum adalah ketidaksesuaian jumlah. Misalnya, mengatakan "these book" atau "this cars". Selalu periksa kembali apakah Anda menggunakan kata tunjuk tunggal untuk benda tunggal dan kata tunjuk jamak untuk benda jamak. Latihan secara konsisten dengan membuat kalimat sendiri adalah cara terbaik untuk membiasakan diri dengan aturan ini.</p>
+      <blockquote><strong>Pro-Tip:</strong> Pikirkan 'this' dan 'these' sebagai sesuatu yang bisa Anda sentuh atau alami sekarang. Pikirkan 'that' dan 'those' sebagai sesuatu yang harus Anda tunjuk atau rujuk dari kejauhan (baik jarak maupun waktu).</blockquote>
+      
+      <img src="https://picsum.photos/seed/thist2/600/350" alt="Dua orang, satu dekat dan satu jauh, dengan panah penunjuk" class="w-full rounded-lg my-4 shadow-md" data-ai-hint="distance proximity illustration" />
+      
+      <hr class="my-10 border-t-2 border-dashed"/>
+
+      <h2>BAGIAN 2: Dua Peran Utama di Atas Panggung Kalimat</h2>
+      <p><em>Demonstratives</em> sangat fleksibel. Mereka bisa memainkan dua peran utama: sebagai <strong>determiner</strong> (aktor pendukung yang mendampingi kata benda) atau sebagai <strong>pronoun</strong> (aktor utama yang menggantikan kata benda).</p>
+
+      <h3>2.1. Peran 1: Sebagai Determiner (atau Demonstrative Adjective)</h3>
+      <p>Ketika berperan sebagai <em>determiner</em>, <em>this, that, these,</em> dan <em>those</em> selalu berdiri <strong>sebelum kata benda</strong> yang mereka modifikasi. Tugas mereka adalah menjawab pertanyaan "Yang mana?" secara spesifik.</p>
+      <p><strong>Rumus:</strong> \`Demonstrative + Noun\`</p>
+      <ul>
+        <li><em>"Let's watch <strong>this movie</strong>."</em> ('this' menjelaskan 'movie' yang mana)</li>
+        <li><em>"Can you hand me <strong>that hammer</strong>?"</em> ('that' menjelaskan 'hammer' yang mana)</li>
+        <li><em>"Are <strong>these keys</strong> yours?"</em> ('these' menjelaskan 'keys' yang mana)</li>
+        <li><em>"I need to wash <strong>those clothes</strong>."</em> ('those' menjelaskan 'clothes' yang mana)</li>
+      </ul>
+      <p><strong>Kesalahan Fatal yang Harus Dihindari:</strong> Ketidakcocokan Jumlah! Ini adalah kesalahan paling umum yang dilakukan pembelajar. Aturannya mutlak:</p>
+      <ul>
+        <li><strong>This/That + Noun Tunggal:</strong> \`this book\` (benar), \`this books\` (SALAH)</li>
+        <li><strong>These/Those + Noun Jamak:</strong> \`these people\` (benar), \`these person\` (SALAH)</li>
+      </ul>
+
+      <h3>2.2. Peran 2: Sebagai Pronoun</h3>
+      <p>Ketika berperan sebagai <em>pronoun</em>, <em>this, that, these,</em> dan <em>those</em> <strong>berdiri sendiri</strong>. Mereka tidak lagi mendampingi kata benda, melainkan <strong>menggantikannya</strong>. Ini dilakukan ketika benda atau orang yang dimaksud sudah jelas dari konteks.</p>
+      <p><strong>Rumus:</strong> \`Demonstrative (berdiri sendiri)\`</p>
+      <ul>
+        <li>Sambil memegang sebuah apel: <em>"<strong>This</strong> is delicious."</em> (This = this apple)</li>
+        <li>Melihat lukisan di seberang ruangan: <em>"<strong>That</strong> is beautiful."</em> (That = that painting)</li>
+        <li>Menawarkan sekantong keripik: <em>"Would you like some of <strong>these</strong>?"</em> (These = these chips)</li>
+        <li>Melihat sekelompok turis: <em>"<strong>Those</strong> are my students."</em> (Those = those tourists)</li>
+      </ul>
+      
+      <p>Untuk pemahaman yang lebih dalam dan contoh-contoh visual, Anda dapat mengunjungi panduan komprehensif tentang <a href="https://www.ultimateducation.co.id/perbedaan-this-that-these-those-dalam-bahasa-inggris/" target="_blank" rel="noopener noreferrer">perbedaan this, that, these, dan those</a> yang menjadi inspirasi artikel ini.</p>
+      
+      <hr class="my-10 border-t-2 border-dashed"/>
+
+      <h2>BAGIAN 3: Penggunaan Tingkat Lanjut & Kontekstual</h2>
+      <p>Setelah menguasai dasar-dasarnya, mari kita jelajahi penggunaan yang lebih bernuansa yang akan membuat bahasa Inggris Anda terdengar lebih alami dan canggih.</p>
+
+      <h3>3.1. Jarak Psikologis: Kedekatan Emosional</h3>
+      <p>'This' dan 'that' tidak hanya mengukur jarak fisik, tetapi juga jarak emosional. 'This' menunjukkan kedekatan, keterlibatan, atau hal positif, sementara 'that' bisa menciptakan jarak, ketidaksetujuan, atau hal negatif.</p>
+      <ul>
+        <li><em>"I love <strong>this</strong> song!"</em> (Menunjukkan Anda sedang menikmati lagu itu sekarang, perasaan positif).</li>
+        <li><em>"I can't believe he said <strong>that</strong>."</em> (Menciptakan jarak dari perkataan yang tidak Anda setujui).</li>
+        <li><em>"Now, <strong>this</strong> is what I call a great meal."</em> (Ekspresi kepuasan).</li>
+        <li><em>"Stop doing <strong>that</strong>. It's annoying."</em> (Menunjukkan ketidaksukaan terhadap suatu tindakan).</li>
+      </ul>
+
+      <h3>3.2. Referensi dalam Teks: Menunjuk ke Depan dan ke Belakang</h3>
+      <p>Dalam penulisan, 'this/these' sering digunakan untuk menunjuk pada sesuatu yang akan Anda sebutkan (maju), sementara 'that/those' digunakan untuk merujuk pada sesuatu yang sudah disebutkan (mundur).</p>
+      <ul>
+        <li><strong>Maju (Foreshadowing):</strong> <em>"Now, listen carefully to <strong>this</strong>: you must finish the report by 5 PM."</em></li>
+        <li><strong>Mundur (Referring back):</strong> <em>"He promised to help, but he never showed up. <strong>That</strong>'s why I'm upset."</em></li>
+      </ul>
+      
+      <img src="https://picsum.photos/seed/thist3/600/350" alt="Tanda panah menunjuk ke depan dan ke belakang" class="w-full rounded-lg my-4 shadow-md" data-ai-hint="forward backward arrows" />
+
+      <h3>3.3. Dalam Percakapan Telepon</h3>
+      <p>Aturan unik berlaku saat di telepon:</p>
+      <ul>
+        <li>Gunakan <strong>'this'</strong> untuk memperkenalkan diri Anda: <em>"Hi, <strong>this</strong> is Sarah."</em></li>
+        <li>Gunakan <strong>'that'</strong> untuk menanyakan identitas orang di seberang telepon: <em>"Hello, who is <strong>that</strong>, please?"</em></li>
+      </ul>
+
+      <h3>3.4. 'That' vs. 'Those' untuk Generalisasi</h3>
+      <p>'Those' sering digunakan dengan klausa 'who' untuk membuat generalisasi tentang sekelompok orang.</p>
+      <ul>
+        <li><em>"Fortune favors <strong>those who</strong> are brave."</em> (Keberuntungan berpihak pada mereka yang berani).</li>
+        <li><em>"Our services are for <strong>those who</strong> need them most."</em> (Layanan kami untuk mereka yang paling membutuhkan).</li>
+      </ul>
+      <p>'That of' juga digunakan dalam penulisan formal untuk perbandingan, menghindari pengulangan kata benda.</p>
+      <ul>
+        <li><em>"The population of Jakarta is much larger than <strong>that of</strong> Surabaya."</em> ('that of' = 'the population of').</li>
+      </ul>
+      
+      <hr class="my-10 border-t-2 border-dashed"/>
+
+      <h2>BAGIAN 4: Latihan Mengasah Kemampuan Anda (Edisi 2025)</h2>
+      <p>Teori tanpa praktik tidak akan menempel. Mari uji pemahaman Anda. Pilih jawaban yang paling tepat (this, that, these, those) untuk mengisi bagian yang kosong.</p>
+      
+      <div class="p-6 my-4 border-l-4 border-primary bg-secondary/30 rounded-lg">
+        <h4 class="font-bold text-lg mb-2">Mini-Quiz:</h4>
+        <ol class="list-decimal list-inside space-y-4">
+            <li>(Melihat foto di tangan Anda) "___ is a picture of my family on vacation last year."</li>
+            <li>"I don't like ___ movies that are too scary. I prefer comedies."</li>
+            <li>A: "My flight is delayed by three hours." B: "Oh, ___ is terrible!"</li>
+            <li>(Menunjuk sepatu yang sedang Anda pakai) "Are ___ comfortable enough for a long walk?"</li>
+            <li>"Could you please pass me ___ documents on the top shelf? I can't reach them."</li>
+            <li>"___ who wish to join the club must sign up by Friday."</li>
+            <li>"Hi, ___ is Maria calling. Is Mr. Wijaya available?"</li>
+            <li>"The climate in the highlands is cooler than ___ in the coastal areas."</li>
+        </ol>
+      </div>
+
+      <details class="mt-4 bg-gray-100 p-4 rounded-lg cursor-pointer">
+        <summary class="font-bold">Lihat Kunci Jawaban</summary>
+        <ol class="list-decimal list-inside mt-2 space-y-2">
+            <li><strong>This</strong> (Foto ada di tangan, dekat dan tunggal).</li>
+            <li><strong>Those</strong> (Merujuk pada jenis film secara umum, jamak dan 'jauh' secara konseptual).</li>
+            <li><strong>That</strong> (Merespons informasi yang baru diterima, tunggal dan menciptakan 'jarak').</li>
+            <li><strong>These</strong> (Sepatu sedang dipakai, dekat dan jamak).</li>
+            <li><strong>Those</strong> (Dokumen di rak atas, jauh dan jamak).</li>
+            <li><strong>Those</strong> (Generalisasi tentang sekelompok orang).</li>
+            <li><strong>This</strong> (Memperkenalkan diri di telepon).</li>
+            <li><strong>that</strong> (Membandingkan 'the climate', menghindari pengulangan, formal).</li>
+        </ol>
+      </details>
+
+      <hr class="my-10 border-t-2 border-dashed"/>
+
+      <h2>Kesimpulan: Menjadi Komunikator yang Presisi</h2>
+      <p><em>This, that, these,</em> dan <em>those</em> mungkin hanya empat kata kecil, tetapi mereka adalah alat presisi dalam perangkat komunikasi Anda. Dengan memahami matriks jarak dan jumlah, mengenali dua peran utama mereka sebagai determiner dan pronoun, serta menghargai nuansa penggunaannya dalam konteks yang berbeda, Anda telah mengambil langkah besar untuk menjadi pembicara dan penulis bahasa Inggris yang lebih jelas, efektif, dan alami.</p>
+      <p>Teruslah berlatih. Perhatikan bagaimana penutur asli menggunakannya dalam film, lagu, dan percakapan. Jangan takut membuat kesalahan, karena dari sanalah kita belajar. Ingat, penguasaan bahasa adalah sebuah perjalanan, dan Anda baru saja melewati sebuah tonggak penting. Untuk sumber belajar lainnya, jangan ragu untuk mengunjungi <a href="http://www.ultimateducation.co.id" target="_blank" rel="noopener noreferrer">Ultimate Education</a>.</p>
     `,
     imageUrl: 'https://picsum.photos/seed/news11/600/400',
     imageHint: 'pointing finger',
-    publicationDate: '2024-07-24T16:00:00Z',
+    publicationDate: '2025-07-24T16:00:00Z',
     category: 'Pendidikan Dasar',
     source: 'Ultimate Education',
     sourceUrl: 'https://www.ultimateducation.co.id/',
