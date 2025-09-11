@@ -1,3 +1,64 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "news-1",
+      "description": "Students in a lecture hall.",
+      "imageUrl": "https://picsum.photos/seed/news1/600/400",
+      "imageHint": "students lecture"
+    },
+    {
+      "id": "news-2",
+      "description": "Close-up of a graduation cap.",
+      "imageUrl": "https://picsum.photos/seed/news2/600/400",
+      "imageHint": "graduation cap"
+    },
+    {
+      "id": "news-3",
+      "description": "Government building facade.",
+      "imageUrl": "https://picsum.photos/seed/news3/600/400",
+      "imageHint": "government building"
+    },
+    {
+      "id": "news-4",
+      "description": "Student studying in a library.",
+      "imageUrl": "https://picsum.photos/seed/news4/600/400",
+      "imageHint": "student library"
+    },
+    {
+      "id": "news-5",
+      "description": "Children in a classroom.",
+      "imageUrl": "https://picsum.photos/seed/news5/600/400",
+      "imageHint": "children classroom"
+    },
+    {
+      "id": "news-6",
+      "description": "A person signing a document.",
+      "imageUrl": "https://picsum.photos/seed/news6/600/400",
+      "imageHint": "signing document"
+    },
+    {
+      "id": "logo-ui",
+      "description": "Logo for Universitas Indonesia",
+      "imageUrl": "https://picsum.photos/seed/ui-logo/100/100",
+      "imageHint": "university logo"
+    },
+    {
+      "id": "logo-ugm",
+      "description": "Logo for Universitas Gadjah Mada",
+      "imageUrl": "https://picsum.photos/seed/ugm-logo/100/100",
+      "imageHint": "university logo"
+    },
+    {
+      "id": "logo-itb",
+      "description": "Logo for Institut Teknologi Bandung",
+      "imageUrl": "https://picsum.photos/seed/itb-logo/100/100",
+      "imageHint": "university logo"
+    },
+    {
+      "id": "logo-ipb",
+      "description": "Logo for IPB University",
+      "imageUrl": "https://picsum.photos/seed/ipb-logo/100/100",
+      "imageHint": "university logo"
+    }
+  ]
 }
