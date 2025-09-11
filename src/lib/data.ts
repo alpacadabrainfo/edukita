@@ -197,32 +197,88 @@ export const newsArticles: NewsArticle[] = [
   {
     id: '9',
     slug: 'menguasai-seni-menulis-recount-text',
-    title: 'Menguasai Seni Bercerita: Pentingnya Recount Text dalam Penulisan',
-    excerpt: 'Recount text adalah salah satu jenis teks dasar dalam bahasa Inggris yang berfungsi untuk menceritakan kembali peristiwa. Menguasainya adalah fondasi penting untuk menjadi penulis yang andal.',
+    title: 'Panduan Lengkap Recount Text: Dari Konsep Hingga Contoh Juara',
+    excerpt: 'Recount text adalah fondasi bercerita. Kuasai strukturnya, pelajari ciri bahasanya, dan lihat contoh-contohnya untuk menjadi pencerita ulung dalam bahasa Inggris.',
     content: `
-      <h2>Apa Itu Recount Text?</h2>
-      <p>Recount text, atau teks kilas balik, adalah jenis tulisan yang bertujuan untuk menceritakan kembali peristiwa atau pengalaman yang telah terjadi di masa lalu. Tujuan utamanya adalah untuk memberikan informasi atau menghibur pembaca dengan menyajikan urutan kejadian secara kronologis. Contoh umum dari recount text termasuk buku harian, biografi, laporan berita, dan cerita pengalaman pribadi.</p>
-
-      <h2>Struktur Recount Text</h2>
-      <p>Sebuah recount text yang baik umumnya memiliki tiga bagian utama:</p>
+      <h2>Bab 1: Membedah Anatomi Recount Text</h2>
+      <p>Recount text, atau teks kilas balik, adalah salah satu jenis tulisan paling mendasar namun paling kuat dalam bahasa Inggris. Fungsinya sederhana: menceritakan kembali sebuah peristiwa atau pengalaman yang telah terjadi. Namun, di balik kesederhanaannya, terdapat struktur dan aturan yang, jika dikuasai, akan menjadi fondasi kokoh untuk kemampuan menulis narasi yang lebih kompleks. Mari kita bedah anatominya.</p>
+      <img src="https://picsum.photos/seed/recount1/600/300" alt="Seseorang menulis di jurnal dengan pena" class="w-full rounded-lg my-4" data-ai-hint="writing journal" />
+      <h3>1.1. Struktur Umum (Generic Structure) yang Wajib Diketahui</h3>
+      <p>Sebuah recount text yang efektif selalu mengikuti kerangka tiga bagian yang logis. Memahami kerangka ini adalah langkah pertama untuk menyusun cerita yang jelas dan mudah diikuti.</p>
       <ol>
-        <li><strong>Orientation (Orientasi):</strong> Bagian pembuka ini memperkenalkan latar belakang cerita. Ini menjawab pertanyaan dasar: siapa yang terlibat, apa yang terjadi, di mana tempatnya, dan kapan waktunya. Orientasi memberikan konteks kepada pembaca agar mereka dapat memahami keseluruhan cerita.</li>
-        <li><strong>Series of Events (Rangkaian Peristiwa):</strong> Ini adalah inti dari recount text. Penulis menyajikan peristiwa-peristiwa secara berurutan (kronologis). Penggunaan kata hubung waktu (time connectives) seperti 'first', 'then', 'next', 'after that', dan 'finally' sangat penting di bagian ini untuk memandu pembaca melalui alur cerita.</li>
-        <li><strong>Re-orientation (Reorientasi):</strong> Bagian penutup ini bersifat opsional. Biasanya berisi kesimpulan, komentar pribadi, atau perasaan penulis tentang peristiwa yang telah diceritakan. Re-orientasi memberikan kesan akhir dan menutup cerita dengan rapi.</li>
+        <li><strong>Orientation (Orientasi):</strong> Ini adalah gerbang pembuka cerita Anda. Di sini, Anda menyajikan panggung. Siapa saja tokohnya? Apa peristiwa utamanya? Di mana lokasi kejadiannya? Kapan waktunya? Orientasi memberikan semua informasi latar yang dibutuhkan pembaca untuk masuk ke dalam dunia cerita Anda. Anggaplah ini seperti adegan pembuka sebuah film.</li>
+        <li><strong>Series of Events (Rangkaian Peristiwa):</strong> Inilah jantung dari recount text. Bagian ini menyajikan serangkaian peristiwa secara kronologis, satu per satu, sesuai urutan waktu kejadian. Kunci utama di sini adalah penggunaan <em>time connectives</em> (kata hubung waktu) seperti <em>'first', 'then', 'next', 'after that', 'later', 'before',</em> dan <em>'finally'</em>. Kata-kata ini berfungsi sebagai penunjuk jalan, memandu pembaca melewati alur cerita Anda tanpa tersesat.</li>
+        <li><strong>Re-orientation (Reorientasi):</strong> Ini adalah bagian penutup yang memberikan sentuhan akhir. Meskipun bersifat opsional, re-orientasi yang baik dapat membuat cerita Anda lebih berkesan. Bagian ini bisa berisi kesimpulan, rangkuman singkat, atau yang lebih penting, perasaan dan kesan pribadi penulis terhadap peristiwa yang telah diceritakan. Apa yang Anda rasakan? Apa pelajaran yang Anda dapat?</li>
       </ol>
-
-      <h2>Ciri-Ciri Kebahasaan (Language Features)</h2>
-      <p>Recount text memiliki beberapa ciri kebahasaan yang khas:</p>
+      <blockquote>Struktur yang solid adalah tulang punggung dari setiap cerita yang bagus. Kuasai Orientation, Events, dan Re-orientation, dan Anda sudah setengah jalan menjadi pencerita yang andal.</blockquote>
+      
+      <h3>1.2. Jenis-jenis Recount Text</h3>
+      <p>Tidak semua recount text diciptakan sama. Berdasarkan tujuannya, kita bisa membaginya menjadi beberapa jenis:</p>
       <ul>
-        <li>Menggunakan <strong>Past Tense</strong> (misalnya, <em>went, saw, studied</em>) karena menceritakan peristiwa yang sudah lampau.</li>
-        <li>Menggunakan <strong>Adverbs of time and place</strong> (keterangan waktu dan tempat) seperti <em>last year, in the park, at 8 o'clock</em>.</li>
-        <li>Fokus pada <strong>specific participants</strong> (pelaku spesifik) seperti <em>"I", "my family", "the president"</em>.</li>
-        <li>Menggunakan <strong>Action Verbs</strong> (kata kerja tindakan) seperti <em>walked, ate, slept</em>.</li>
+        <li><strong>Personal Recount:</strong> Jenis yang paling umum, menceritakan pengalaman pribadi penulis. Contoh: cerita liburan, pengalaman pertama melakukan sesuatu, entri buku harian.</li>
+        <li><strong>Factual Recount:</strong> Menceritakan kembali sebuah fakta atau peristiwa yang benar-benar terjadi, seringkali bersifat informatif. Contoh: laporan berita, laporan percobaan ilmiah, catatan sejarah.</li>
+        <li><strong>Imaginative Recount:</strong> Menceritakan kembali sebuah peristiwa dari sudut pandang imajinatif. Contoh: menceritakan mimpi, menulis cerita dari sudut pandang seekor hewan.</li>
+        <li><strong>Biographical Recount:</strong> Menceritakan kembali riwayat hidup seseorang secara kronologis.</li>
       </ul>
-      <p>Memahami dan mampu mengaplikasikan elemen-elemen ini adalah kunci untuk menulis recount text yang efektif. Untuk pemahaman yang lebih komprehensif, Anda bisa membaca artikel tentang <a href="https://www.ultimateducation.co.id/article-understanding-recount-text-and-its-importance-in-writing" target="_blank" rel="noopener noreferrer">memahami recount text dan pentingnya dalam menulis</a>.</p>
+      <p>Memahami jenis-jenis ini membantu Anda menyesuaikan gaya penulisan dengan tujuan Anda. Untuk pemahaman yang lebih dalam tentang dasar-dasar penulisan ini, kunjungi artikel komprehensif tentang <a href="https://www.ultimateducation.co.id/article-understanding-recount-text-and-its-importance-in-writing" target="_blank" rel="noopener noreferrer">memahami recount text dan pentingnya dalam menulis</a>.</p>
 
-      <h2>Mengapa Recount Text Penting?</h2>
-      <p>Menguasai recount text bukan hanya tentang tugas sekolah. Ini adalah keterampilan hidup yang mendasar. Kemampuan untuk menceritakan kembali peristiwa secara jelas dan terstruktur sangat penting dalam komunikasi sehari-hari, penulisan laporan di tempat kerja, hingga pembuatan konten kreatif. Ini melatih kemampuan kita untuk mengorganisir pikiran dan menyajikannya secara logis kepada orang lain. Bagi pelajar bahasa Inggris, ini adalah langkah awal yang bagus sebelum beralih ke jenis teks yang lebih kompleks seperti naratif, eksposisi, atau argumentasi.</p>
+      <hr class="my-8 border-t-2"/>
+
+      <h2>Bab 2: Unsur Kebahasaan (Language Features) Recount Text</h2>
+      <p>Setelah memahami strukturnya, mari kita selami elemen-elemen kebahasaan yang menjadi "daging" dari recount text. Penggunaan tata bahasa dan kosakata yang tepat akan menghidupkan cerita Anda.</p>
+      <img src="https://picsum.photos/seed/recount2/600/300" alt="Buku tata bahasa Inggris terbuka" class="w-full rounded-lg my-4" data-ai-hint="grammar book" />
+      <h3>2.1. Penggunaan Tenses: Mesin Waktu Anda</h3>
+      <p>Karena recount text menceritakan peristiwa masa lalu, tenses yang paling dominan adalah <strong>Past Tense</strong>. </p>
+      <ul>
+          <li><strong>Simple Past Tense:</strong> Ini adalah tenses utama Anda. Gunakan untuk menyatakan aksi yang terjadi dan selesai di masa lampau. Contoh: <em>"We <strong>walked</strong> along the beach," "She <strong>ate</strong> the entire pizza," "They <strong>did not arrive</strong> on time."</em></li>
+          <li><strong>Past Continuous Tense:</strong> Gunakan untuk mendeskripsikan sebuah aksi yang sedang berlangsung di masa lampau, seringkali sebagai latar belakang untuk aksi lain. Contoh: <em>"The sun <strong>was shining</strong> when we <strong>arrived</strong>."</em></li>
+          <li><strong>Past Perfect Tense:</strong> Gunakan untuk menyatakan sebuah aksi yang telah selesai sebelum aksi lain di masa lampau terjadi. Ini sangat berguna untuk memberikan kilas balik di dalam cerita Anda. Contoh: <em>"By the time the guide arrived, we <strong>had already bought</strong> the tickets."</em></li>
+      </ul>
+
+      <h3>2.2. Kata Kunci Lainnya yang Menghidupkan Cerita</h3>
+      <ul>
+        <li><strong>Action Verbs (Kata Kerja Aksi):</strong> Gunakan kata kerja yang kuat dan deskriptif. Alih-alih 'walked', coba 'strolled', 'dashed', atau 'trudged'. Contoh: <em>ran, climbed, explored, discovered</em>.</li>
+        <li><strong>Adverbs of Time, Place, and Manner (Keterangan Waktu, Tempat, dan Cara):</strong> Ini memberikan detail yang kaya pada cerita Anda.
+            <ul>
+                <li><strong>Waktu:</strong> <em>yesterday, last summer, three days ago, at midnight.</em></li>
+                <li><strong>Tempat:</strong> <em>in the middle of the forest, on top of the mountain, beside the river.</em></li>
+                <li><strong>Cara:</strong> <em>slowly, carefully, with excitement, nervously.</em></li>
+            </ul>
+        </li>
+        <li><strong>Conjunctions & Time Connectives:</strong> Seperti yang dibahas sebelumnya, ini adalah perekat yang menyatukan alur cerita Anda. Gunakan <em>and, but, so, because, then, after that, finally.</em></li>
+      </ul>
+
+      <hr class="my-8 border-t-2"/>
+
+      <h2>Bab 3: Contoh dan Analisis Recount Text</h2>
+      <p>Teori tidak akan lengkap tanpa praktik. Mari kita lihat contoh recount text dan membedahnya berdasarkan struktur dan ciri kebahasaan yang telah kita pelajari.</p>
+
+      <h3>Contoh: "My First Hike to Mount Batur"</h3>
+      
+      <p><strong>[Orientation]</strong></p>
+      <p><em>Last year, my friends and I decided to go on an adventure to Bali. One of the main goals of our trip was to hike Mount Batur to see the sunrise. We were all very excited but also a little nervous, as none of us were experienced hikers. We booked a tour and prepared for an early start on a cool Saturday morning.</em></p>
+      
+      <img src="https://picsum.photos/seed/recount3/600/300" alt="Pemandangan matahari terbit dari puncak gunung" class="w-full rounded-lg my-4" data-ai-hint="mountain sunrise" />
+
+      <p><strong>[Series of Events]</strong></p>
+      <p><em>First, our driver picked us up from our hotel at 2 AM. The journey to the base of the mountain took about an hour. After we arrived, our guide, a friendly local named Gede, gave us flashlights and a quick briefing. Then, we started our ascent in complete darkness. The path was steep and rocky, and we had to walk carefully. After about an hour, we took a short break. Gede pointed out the stars, which were incredibly bright and clear. Next, we continued our journey. The final part of the hike was the most challenging, but the thought of the sunrise kept us going. Finally, around 5:30 AM, we reached the summit.</em></p>
+
+      <p><strong>[Re-orientation]</strong></p>
+      <p><em>It was absolutely breathtaking. We watched as the sky slowly changed colors from dark blue to orange and pink. The view of the surrounding lake and mountains was spectacular. We ate a simple breakfast of boiled eggs cooked in the volcanic steam. That experience was one of the most memorable moments of my life. It was challenging, but the reward was totally worth it.</em></p>
+
+      <h3>Analisis:</h3>
+      <ul>
+        <li><strong>Struktur:</strong> Teks ini jelas mengikuti ketiga bagian: Orientasi (memperkenalkan siapa, kapan, di mana), Rangkaian Peristiwa (menggunakan 'First', 'Then', 'After', 'Next', 'Finally'), dan Reorientasi (menyatakan kesan dan perasaan penulis).</li>
+        <li><strong>Kebahasaan:</strong>
+            <ul>
+                <li><strong>Past Tense:</strong> <em>decided, went, was, booked, picked, started, was, reached.</em></li>
+                <li><strong>Action Verbs:</strong> <em>hike, see, booked, picked, started, walk, took, pointed out, reached, watched.</em></li>
+                <li><strong>Adverbs:</strong> <em>Last year, at 2 AM, carefully, incredibly bright.</em></li>
+                <li><strong>Participants:</strong> <em>My friends and I, our driver, our guide Gede.</em></li>
+            </ul>
+        </li>
+      </ul>
+      <p>Menguasai dasar-dasar bahasa seperti <a href="https://www.ultimateducation.co.id/perbedaan-this-that-these-those-dalam-bahasa-inggris/" target="_blank" rel="noopener noreferrer">perbedaan this, that, these, dan those</a> juga akan sangat membantu dalam membuat deskripsi yang akurat dalam cerita Anda. Untuk bimbingan lebih lanjut, <a href="http://www.ultimateducation.co.id" target="_blank" rel="noopener noreferrer">Ultimate Education</a> menyediakan berbagai sumber daya untuk meningkatkan kemampuan bahasa Inggris Anda.</p>
     `,
     imageUrl: 'https://picsum.photos/seed/news9/600/400',
     imageHint: 'person writing diary',
