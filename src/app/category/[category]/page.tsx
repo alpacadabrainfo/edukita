@@ -8,8 +8,15 @@ type Props = {
   params: { category: string }
 }
 
+function capitalizeWords(str: string) {
+  return str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const categoryName = params.category.replace(/-/g, ' ');
+  const title = capitalizeWords(categoryName);
+  const description = `Jelajahi semua berita dan artikel pendidikan dalam kategori ${title}. Dapatkan informasi terbaru seputar ${title} hanya di EduKita.`;
+
   const categoryExists = newsArticles.some(a => a.category.toLowerCase() === categoryName);
 
   if (!categoryExists) {
@@ -18,11 +25,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
   }
 
-  const title = categoryName.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  const url = `/category/${params.category}`;
  
   return {
-    title: `Kategori: ${title} | EduKita`,
-    description: `Berita dan artikel dalam kategori ${title}.`,
+    title: `Kategori: ${title}`,
+    description: description,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title: `Kategori: ${title} | EduKita`,
+      description: description,
+      url: url,
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `Kategori: ${title} | EduKita`,
+      description: description,
+    }
   }
 }
 
@@ -35,7 +56,7 @@ export default function CategoryPage({ params }: { params: { category: string } 
     notFound();
   }
 
-  const title = categoryName.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  const title = capitalizeWords(categoryName);
 
   return (
     <div className="container mx-auto px-4 py-8">

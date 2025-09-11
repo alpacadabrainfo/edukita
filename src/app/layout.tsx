@@ -4,10 +4,45 @@ import { cn } from '@/lib/utils';
 import Header from '@/components/layout/header';
 import { Toaster } from '@/components/ui/toaster';
 
+const siteConfig = {
+  name: 'EduKita',
+  description: 'Portal Berita Pendidikan Terkini - Informasi seputar penerimaan mahasiswa, siswa, peraturan pemerintah, beasiswa, dan edukasi.',
+  url: 'https://edukita.example.com', // Ganti dengan URL domain Anda
+  ogImage: 'https://edukita.example.com/og-image.png', // Ganti dengan URL gambar default Anda
+};
+
+
 export const metadata: Metadata = {
-  title: 'EduKita - Portal Berita Pendidikan',
-  description:
-    'Informasi terkini seputar penerimaan mahasiswa, siswa, peraturan pemerintah, dan edukasi.',
+  title: {
+    default: siteConfig.name,
+    template: `%s | ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  metadataBase: new URL(siteConfig.url),
+  openGraph: {
+    type: 'website',
+    locale: 'id_ID',
+    url: siteConfig.url,
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: [
+      {
+        url: siteConfig.ogImage,
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: [siteConfig.ogImage],
+  },
+  icons: {
+    icon: '/favicon.ico', // Pastikan Anda memiliki favicon.ico di folder public
+  },
 };
 
 export default function RootLayout({

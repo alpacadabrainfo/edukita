@@ -21,10 +21,36 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: 'Artikel tidak ditemukan',
     }
   }
+
+  const url = `/article/${article.slug}`;
  
   return {
-    title: `${article.title} | EduKita`,
+    title: article.title,
     description: article.excerpt,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title: article.title,
+      description: article.excerpt,
+      type: 'article',
+      publishedTime: article.publicationDate,
+      url: url,
+      images: [
+        {
+          url: article.imageUrl,
+          width: 600,
+          height: 400,
+          alt: article.title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: article.title,
+      description: article.excerpt,
+      images: [article.imageUrl],
+    },
   }
 }
 
@@ -62,7 +88,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent" />
           <div className="absolute bottom-0 left-0 p-8 text-white">
-             <Link href={`/category/${article.category.toLowerCase().replace(/ /g, '-')}`}>
+             <Link href={`/category/${article.category.toLowerCase().replace(/ /g, '-')}`} aria-label={`Lihat semua artikel dalam kategori ${article.category}`}>
                 <Badge variant="secondary" className="mb-3 hover:bg-white/90 transition-colors">
                     {article.category}
                 </Badge>
@@ -75,7 +101,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
                   <Calendar className="h-4 w-4" />
                   <time dateTime={article.publicationDate}>{formattedDate}</time>
                 </div>
-                <Link href={article.sourceUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-white transition-colors">
+                <Link href={article.sourceUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-white transition-colors" aria-label={`Baca sumber asli dari ${article.source}`}>
                   Sumber: {article.source} <ExternalLink className="h-4 w-4" />
                 </Link>
             </div>
@@ -89,12 +115,12 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
           </div>
           
           {/* Sidebar */}
-          <aside className="lg:col-span-4 space-y-8 lg:mt-0">
+          <aside className="lg:col-span-4 space-y-8 lg:mt-0" aria-labelledby="related-news-heading">
             <div>
-              <h3 className="text-2xl font-bold font-headline mb-4">Berita Terkait</h3>
+              <h2 id="related-news-heading" className="text-2xl font-bold font-headline mb-4">Berita Terkait</h2>
               <div className="space-y-4">
                 {articlesToShow.map((relatedArticle) => (
-                  <Link key={relatedArticle.id} href={`/article/${relatedArticle.slug}`} className="group flex items-start gap-4">
+                  <Link key={relatedArticle.id} href={`/article/${relatedArticle.slug}`} className="group flex items-start gap-4" aria-label={`Baca artikel: ${relatedArticle.title}`}>
                     <div className="relative h-20 w-20 shrink-0 rounded-md overflow-hidden">
                       <Image
                         src={relatedArticle.imageUrl}
@@ -106,7 +132,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
                       />
                     </div>
                     <div>
-                      <h4 className="font-semibold leading-tight group-hover:text-primary transition-colors">{relatedArticle.title}</h4>
+                      <h3 className="font-semibold leading-tight group-hover:text-primary transition-colors text-base">{relatedArticle.title}</h3>
                       <p className="text-xs text-muted-foreground mt-1">{relatedArticle.category}</p>
                     </div>
                   </Link>
@@ -118,14 +144,14 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
       </article>
 
        {/* More News */}
-      <div className="mt-16 pt-8 border-t">
-            <h2 className="text-3xl font-bold font-headline mb-6 text-center">Jelajahi Berita Lainnya</h2>
+      <section className="mt-16 pt-8 border-t" aria-labelledby="more-news-heading">
+            <h2 id="more-news-heading" className="text-3xl font-bold font-headline mb-6 text-center">Jelajahi Berita Lainnya</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {sortedArticles.filter(a => a.slug !== params.slug).slice(0, 3).map((article) => (
                 <NewsCard key={article.id} article={article} />
               ))}
             </div>
-       </div>
+       </section>
 
     </div>
   );

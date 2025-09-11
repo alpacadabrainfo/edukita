@@ -27,64 +27,66 @@ export default async function HomePage() {
   const categories = [...new Set(newsArticles.map(a => a.category))];
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <>
       {/* Hero Section */}
-      <div className="mb-8">
-        <Carousel className="w-full" opts={{ loop: true }}>
-          <CarouselContent>
-            {heroArticles.map((article) => (
-              <CarouselItem key={article.id}>
-                <Link href={`/article/${article.slug}`} className="group block">
-                  <div className="relative h-[450px] w-full rounded-xl overflow-hidden shadow-lg">
-                    <Image
-                      src={article.imageUrl}
-                      alt={article.title}
-                      fill
-                      priority
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
-                      data-ai-hint={article.imageHint}
-                      sizes="100vw"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
-                    <div className="absolute bottom-0 left-0 p-8 text-white">
-                      <Badge variant="secondary" className="mb-2">{article.category}</Badge>
-                      <h1 className="text-3xl md:text-4xl font-bold font-headline mb-2 max-w-4xl">
-                        {article.title}
-                      </h1>
-                      <p className="text-sm md:text-base text-gray-200 max-w-3xl">
-                        {article.excerpt}
-                      </p>
+      <section className="container mx-auto px-4 py-8" aria-labelledby="hero-heading">
+        <h1 id="hero-heading" className="sr-only">Berita Utama EduKita</h1>
+        <div className="mb-8">
+          <Carousel className="w-full" opts={{ loop: true }}>
+            <CarouselContent>
+              {heroArticles.map((article) => (
+                <CarouselItem key={article.id}>
+                  <Link href={`/article/${article.slug}`} className="group block" aria-label={`Baca berita utama: ${article.title}`}>
+                    <div className="relative h-[450px] w-full rounded-xl overflow-hidden shadow-lg">
+                      <Image
+                        src={article.imageUrl}
+                        alt={article.title}
+                        fill
+                        priority
+                        className="object-cover transition-transform duration-300 group-hover:scale-105"
+                        data-ai-hint={article.imageHint}
+                        sizes="100vw"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
+                      <div className="absolute bottom-0 left-0 p-8 text-white">
+                        <Badge variant="secondary" className="mb-2">{article.category}</Badge>
+                        <h2 className="text-3xl md:text-4xl font-bold font-headline mb-2 max-w-4xl">
+                          {article.title}
+                        </h2>
+                        <p className="text-sm md:text-base text-gray-200 max-w-3xl">
+                          {article.excerpt}
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </Link>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="left-4" />
-          <CarouselNext className="right-4" />
-        </Carousel>
-      </div>
+                  </Link>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-4" />
+            <CarouselNext className="right-4" />
+          </Carousel>
+        </div>
+      </section>
 
-
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+      <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-8">
         {/* Main content */}
-        <div className="lg:col-span-8">
-          <h2 className="text-3xl font-bold font-headline mb-6">Berita Lainnya</h2>
+        <section className="lg:col-span-8" aria-labelledby="other-news-heading">
+          <h2 id="other-news-heading" className="text-3xl font-bold font-headline mb-6">Berita Lainnya</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {otherArticles.map((article) => (
               <NewsCard key={article.id} article={article} />
             ))}
           </div>
-        </div>
+        </section>
 
         {/* Sidebar */}
         <aside className="lg:col-span-4 space-y-8">
           {/* Categories */}
-          <div>
-            <h3 className="text-2xl font-bold font-headline mb-4">Kategori</h3>
+          <section aria-labelledby="categories-heading">
+            <h3 id="categories-heading" className="text-2xl font-bold font-headline mb-4">Kategori</h3>
             <div className="flex flex-wrap gap-2">
               {categories.map((category) => (
-                <Link key={category} href={`/category/${category.toLowerCase().replace(/ /g, '-')}`}>
+                <Link key={category} href={`/category/${category.toLowerCase().replace(/ /g, '-')}`} aria-label={`Lihat semua artikel dalam kategori ${category}`}>
                     <Badge variant="outline" className="hover:bg-secondary cursor-pointer">
                         <Tag className="mr-1 h-3 w-3" />
                         {category}
@@ -92,14 +94,14 @@ export default async function HomePage() {
                 </Link>
               ))}
             </div>
-          </div>
+          </section>
 
           {/* Popular News */}
-          <div>
-            <h3 className="text-2xl font-bold font-headline mb-4">Berita Populer</h3>
+          <section aria-labelledby="popular-news-heading">
+            <h3 id="popular-news-heading" className="text-2xl font-bold font-headline mb-4">Berita Populer</h3>
             <div className="space-y-4">
               {popularArticles.map((article) => (
-                <Link key={article.id} href={`/article/${article.slug}`} className="group flex items-start gap-4">
+                <Link key={article.id} href={`/article/${article.slug}`} className="group flex items-start gap-4" aria-label={`Baca artikel populer: ${article.title}`}>
                   <div className="relative h-20 w-20 shrink-0 rounded-md overflow-hidden">
                     <Image
                       src={article.imageUrl}
@@ -117,14 +119,14 @@ export default async function HomePage() {
                 </Link>
               ))}
             </div>
-          </div>
+          </section>
 
           {/* Latest News */}
-          <div>
-            <h3 className="text-2xl font-bold font-headline mb-4">Berita Terbaru</h3>
+          <section aria-labelledby="latest-news-heading">
+            <h3 id="latest-news-heading" className="text-2xl font-bold font-headline mb-4">Berita Terbaru</h3>
             <div className="space-y-4">
               {latestArticles.map((article) => (
-                 <Link key={article.id} href={`/article/${article.slug}`} className="group block">
+                 <Link key={article.id} href={`/article/${article.slug}`} className="group block" aria-label={`Baca berita terbaru: ${article.title}`}>
                   <p className="font-semibold leading-tight group-hover:text-primary transition-colors">{article.title}</p>
                    <div className="flex items-center gap-2 text-xs text-muted-foreground mt-1">
                       <Calendar className="h-3 w-3" />
@@ -135,9 +137,9 @@ export default async function HomePage() {
                 </Link>
               ))}
             </div>
-          </div>
+          </section>
         </aside>
       </div>
-    </div>
+    </>
   );
 }
