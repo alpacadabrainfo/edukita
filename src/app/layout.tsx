@@ -8,7 +8,7 @@ const siteConfig = {
   name: 'EduKita',
   description: 'Portal Berita Pendidikan Terkini - Informasi seputar penerimaan mahasiswa, siswa, peraturan pemerintah, beasiswa, dan edukasi.',
   url: 'https://edukita.example.com', // Ganti dengan URL domain Anda
-  ogImage: 'https://edukita.example.com/og-image.png', // Ganti dengan URL gambar default Anda
+  ogImage: 'https://edUKita.example.com/og-image.png', // Ganti dengan URL gambar default Anda
 };
 
 
@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   metadataBase: new URL(siteConfig.url),
+  verification: {
+    google: "ezt_ZYW0rteNiui-SK3bL4jHiP06_aMqSYzqt5qNWhs",
+  },
   openGraph: {
     type: 'website',
     locale: 'id_ID',
