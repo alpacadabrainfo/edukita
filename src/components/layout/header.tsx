@@ -51,21 +51,21 @@ export default function Header() {
                 <span className="sr-only">Buka menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right">
-              <div className="flex flex-col">
+            <SheetContent side="right" className="w-[300px] p-0">
+              <div className="flex flex-col h-full">
                 <div className="border-b p-4">
-                  <Link href="/" className="flex items-center gap-2 font-headline text-xl font-bold text-primary">
+                   <Link href="/" className="flex items-center gap-2 font-headline text-xl font-bold text-primary">
                     <GraduationCap className="h-7 w-7" />
                     <span>EduKita</span>
                   </Link>
                 </div>
-                <nav className="flex flex-col gap-2 p-4">
+                <nav className="flex flex-col gap-1 p-4">
                   {navItems.map((item) => (
                      <SheetClose asChild key={item.href}>
                         <Link
                           href={item.href}
                           className={cn(
-                            'flex items-center gap-3 rounded-md p-3 text-base font-medium transition-colors hover:bg-secondary',
+                            'flex items-center gap-3 rounded-md px-3 py-2.5 text-base font-medium transition-colors hover:bg-secondary',
                             pathname === item.href
                               ? 'bg-secondary font-semibold text-primary'
                               : 'text-foreground'

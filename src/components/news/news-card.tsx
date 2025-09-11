@@ -22,7 +22,7 @@ export default function NewsCard({ article }: NewsCardProps) {
 
   return (
     <Link href={`/article/${article.slug}`} className="group block" aria-label={`Baca lebih lanjut tentang ${article.title}`}>
-      <Card className="flex h-full flex-col overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-1">
+      <Card className="flex h-full flex-col overflow-hidden rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
         <CardHeader className="p-0">
           <div className="relative h-48 w-full">
             <Image
@@ -37,7 +37,7 @@ export default function NewsCard({ article }: NewsCardProps) {
           </div>
         </CardHeader>
         <CardContent className="flex flex-1 flex-col p-4">
-          <CardTitle className="mb-2 text-lg font-bold leading-tight group-hover:text-primary">
+          <CardTitle className="mb-2 text-lg font-bold font-headline leading-tight group-hover:text-primary">
             {article.title}
           </CardTitle>
           <p className="flex-grow text-sm text-muted-foreground">

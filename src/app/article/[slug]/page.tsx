@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { newsArticles } from '@/lib/data';
 import { notFound } from 'next/navigation';
 import { Badge } from '@/components/ui/badge';
-import { Calendar, ExternalLink, Tag } from 'lucide-react';
+import { Calendar, ExternalLink } from 'lucide-react';
 import { format, parseISO } from 'date-fns';
 import { id as indonesiaLocale } from 'date-fns/locale';
 import { Metadata } from 'next';

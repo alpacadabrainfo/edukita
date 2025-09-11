@@ -7,7 +7,7 @@ export interface NewsArticle {
   imageUrl: string;
   imageHint: string;
   publicationDate: string;
-  category: 'Higher Education' | 'Primary Education' | 'Government Regulations' | 'Scholarships';
+  category: 'Pendidikan Tinggi' | 'Pendidikan Dasar' | 'Regulasi Pemerintah' | 'Beasiswa';
   source: string;
   sourceUrl: string;
 }
