@@ -3,6 +3,7 @@ import './globals.css';
 import { cn } from '@/lib/utils';
 import Header from '@/components/layout/header';
 import { Toaster } from '@/components/ui/toaster';
+import Script from 'next/script';
 
 const siteConfig = {
   name: 'EduKita',
@@ -64,6 +65,18 @@ export default function RootLayout({
         />
       </head>
       <body className={cn('min-h-screen bg-background font-body antialiased')}>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-9BXVF79M52"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-9BXVF79M52');
+          `}
+        </Script>
         <div className="relative flex min-h-screen w-full flex-col">
           <Header />
           <main className="flex-1">{children}</main>
